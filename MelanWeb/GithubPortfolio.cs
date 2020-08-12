@@ -16,5 +16,7 @@ namespace MelanWeb
         public static int OnGoingProjects { get { return 2; } }
 
         public static int SuccesRate { get { return (int)(((float)(Projects - OnGoingProjects) / Projects * 100)); } }
+
+        public static DateTime LastRefreshed { get; set; } = DateTime.Now;
     }
 }
