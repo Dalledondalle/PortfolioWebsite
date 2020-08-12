@@ -1,0 +1,36 @@
+﻿@page
+@model MelanWeb.Pages.ExperiencesModel
+@{
+    ViewData["Title"] = "Experiences";
+}
+
+<!-- Start Align Area -->
+<div class="whole-wrap">
+    @if (Model.Exp != null)
+    {
+        <div class="container box_1170">
+            <div class="section-top-border">
+                @foreach (var item in Model.Exp.Experiences)
+                {
+                    <h3 class="mb-30">@item.Name</h3>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="@item.ImgScr" class="logo_experience" />
+                        </div>
+                        <div class="col-md-9 mt-sm-20">
+                            <p>
+                                @item.Description
+                            </p>
+                        </div>
+                    </div>
+                    <br />
+                }
+            </div>
+        </div>
+    }
+    else
+    {
+        <h3>Oops, <br />Something went wrong</h3>
+    }
+</div>
+<!-- End Align Area -->

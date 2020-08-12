@@ -1,0 +1,71 @@
+﻿@page
+@model MelanWeb.Pages.AboutMeModel
+@{
+    ViewData["Title"] = "AboutMe";
+}
+@if (Model.AboutMe != null)
+{
+    <div class="whole-wrap">
+        <div class="container box_1170">
+            <div class="section-top-border">
+                <h3 class="mb-30">Generel Information</h3>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="img/elements/info.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-9 mt-sm-20">
+                        <p>
+                            @Model.AboutMe.GenerelInformation
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-top-border text-right">
+                <h3 class="mb-30">Min Baggrund</h3>
+                <div class="row">
+                    <div class="col-md-9">
+                        <p class="text-right">
+                            @Model.AboutMe.BackgroundInformation
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/elements/Background.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-top-border">
+                <h3 class="mb-30">Motivation For Programmering</h3>
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="img/elements/motivation.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-md-9 mt-sm-20">
+                        <p>
+                            @Model.AboutMe.Motivation
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-top-border text-right">
+                <h3 class="mb-30">Fritidsinterresser</h3>
+                <div class="row">
+                    <div class="col-md-9">
+                        <p class="text-right">
+                            @Model.AboutMe.SparetimeInterrests
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="img/elements/gaming.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <h2>Ikk fundet</h2>
+}
+
+

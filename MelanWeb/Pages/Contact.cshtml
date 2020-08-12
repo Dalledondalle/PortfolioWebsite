@@ -1,0 +1,69 @@
+﻿@page
+@model MelanWeb.Pages.ContactModel
+@{
+    ViewData["Title"] = "Contact";
+}
+<!-- ================ contact section start ================= -->
+<!--<li><a href="" target="_blank"> <i class="fa fa-facebook"></i> </a></li>-->
+<section class="section_contact">
+    <div class="table_center">
+        <ul class="contact_ul">
+            <li>
+                <div class="media contact-info">
+                    <span class="contact-info__icon"><i class="ti-home"></i></span>
+                    <div class="media-body">
+                        <h3>@MelanWeb.StaticInformation.ContactInformations.City</h3>
+                        <p>@MelanWeb.StaticInformation.ContactInformations.StreetName</p>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="media contact-info">
+                    <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+                    <div class="media-body">
+                        <h3>@MelanWeb.StaticInformation.ContactInformations.PhoneNumber</h3>
+                        <p>Mandag til fredag fra 8 til 20</p>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="media contact-info">
+                    <span class="contact-info__icon"><i class="ti-email"></i></span>
+                    <div class="media-body">
+                        <h3>@MelanWeb.StaticInformation.ContactInformations.Email</h3>
+                        <p>Send mig en mail når som helst</p>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="table_center">
+        <ul class="contact_ul">
+            <li>
+                <a href=@MelanWeb.StaticInformation.ContactInformations.Facebook target="_blank"> <i class="fa fa-facebook"></i> </a>
+            </li>
+
+            <li>
+                <a href=@MelanWeb.StaticInformation.ContactInformations.Twitter target="_blank"> <i class="fa fa-twitter"></i> </a>
+            </li>
+
+            <li>
+                <a href=@MelanWeb.StaticInformation.ContactInformations.LinkedIn target="_blank"> <i class="fa fa-linkedin"></i> </a>
+            </li>
+
+            <li>
+                <a href=@MelanWeb.StaticInformation.ContactInformations.Twitch target="_blank"> <i class="fa fa-twitch"></i> </a>
+            </li>
+
+            <li>
+                <a href=@MelanWeb.StaticInformation.ContactInformations.Youtube target="_blank"> <i class="fa fa-youtube"></i> </a>
+            </li>
+
+        </ul>
+    </div>
+</section>
+

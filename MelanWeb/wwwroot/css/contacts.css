@@ -1,0 +1,34 @@
+﻿.contact_ul {
+    display: table;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+    .contact_ul li {
+        float: left;
+        margin: 10px;
+    }
+
+.section_contact {
+    width: 100%;
+    height: 400px;
+    background-color: white;
+}
+
+.table_center {
+    display: table;
+    margin: 0 auto;
+    padding: 3%;
+}
+
+.experiences_ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+    .experiences_ul li {
+        float: left;
+        margin: 10px;
+    }
