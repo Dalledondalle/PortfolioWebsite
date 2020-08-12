@@ -17,7 +17,7 @@ namespace MelanWeb.Services
         {
             Username = username;
         }
-        public async Task<PortfolioModel> GetGithubRepos()
+        public PortfolioModel GetGithubRepos()
         {
             var client = new RestClient($"https://api.github.com/users/{Username}/repos");
             client.Timeout = -1;
@@ -28,7 +28,7 @@ namespace MelanWeb.Services
                 Debug.WriteLine(response.Content);
                 PortfolioModel p = new PortfolioModel();
                 p.PortfolioObjects = JsonConvert.DeserializeObject<PortfolioObject[]>(response.Content);
-                
+
                 foreach (var t in p.PortfolioObjects)
                 {
                     t.IssueURLs = new string[t.OpenIssues];

@@ -6,7 +6,7 @@ namespace MelanWeb.Services
 {
     public interface IGithubPortfolioService
     {
-        Task<PortfolioModel> GetGithubRepos();
+        PortfolioModel GetGithubRepos();
         IssueObject GetIssueObject(string href);
     }
 }

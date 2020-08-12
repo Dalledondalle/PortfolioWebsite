@@ -63,7 +63,7 @@ namespace MelanWeb
         {
             string username = configurationSection.GetSection("Username").Value;
             GithubPortfolioService GithubService = new GithubPortfolioService("DalleDonDalle");
-            PortfolioModel p = await GithubService.GetGithubRepos();
+            PortfolioModel p = GithubService.GetGithubRepos();
             GithubPortfolio.Content = p;
             return GithubService;
         }
