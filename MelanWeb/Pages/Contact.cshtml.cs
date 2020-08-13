@@ -10,7 +10,7 @@ namespace MelanWeb.Pages
 {
     public class ContactModel : PageModel
     {
-        public string PageTitle { get; set; } = "Kontak Mig";
+        public string PageTitle { get; set; } = "Kontakt Mig";
         public void OnGet()
         {
 
