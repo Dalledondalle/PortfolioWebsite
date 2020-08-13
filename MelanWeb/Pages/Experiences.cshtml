@@ -9,9 +9,10 @@
     @if (Model.Exp != null)
     {
         <div class="container box_1170">
-            <div class="section-top-border">
-                @foreach (var item in Model.Exp.Experiences)
-                {
+
+            @foreach (var item in Model.Exp.Experiences)
+            {
+                <div class="section-top-border">
                     <h3 class="mb-30">@item.Name</h3>
                     <div class="row">
                         <div class="col-md-3">
@@ -23,9 +24,8 @@
                             </p>
                         </div>
                     </div>
-                    <br />
-                }
-            </div>
+                </div>
+            }
         </div>
     }
     else
